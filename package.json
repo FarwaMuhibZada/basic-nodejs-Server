@@ -4,7 +4,8 @@
   "description": "In this project, I have  build a basic web server using Node.js and Express.js. The server will handle multiple HTTP requests, serve static content, and allow basic CRUD operations (Create, Read, Update, Delete) on a simple dataset (e.g., users or products).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
