@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const usersRoute = require('./routes/users');
 
 const app = express();
 const PORT = 3000;
@@ -14,6 +15,9 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
+
+// Use the users route for /users path
+app.use('/users', usersRoute);
 
 // Start the server
 app.listen(PORT, () => {
