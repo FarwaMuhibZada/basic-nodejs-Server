@@ -13,18 +13,19 @@ By the end of this project, you'll be able to:
 ## 🏗️ Project Structure
 
 ```bash
-my-node-server/
+basic-nodejs-server/
 │
 ├── public/            # Contains static files like HTML, CSS, JS
 │   ├── index.html     # A simple homepage
-│   └── style.css      # Basic styling for the homepage
+│   ├── style.css      # Styling for the homepage
+│   └── script.js      # Handles user data interaction
 │
-├── routes/
-│   └── users.js       # Route handlers for 'users' CRUD operations
+├── users.json         # Contains user data (stored separately)
 │
 ├── server.js          # Main server file
 │
 └── package.json       # Dependencies and scripts
+
 ```
 ## ⚙️ Installation
 To set up this project locally, follow these steps:

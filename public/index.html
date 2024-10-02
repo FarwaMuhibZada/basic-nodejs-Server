@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>My Node.js Server</title>
-	<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<h1>Welcome to My Node.js Server</h1>
-	<p>This server is built using Node.js and Express.js.</p>
-</body>
+    <div class="container">
+        <h1>User Management System</h1>
 
+        <!-- User List Section -->
+        <section id="user-list">
+            <h2>Registered Users</h2>
+            <ul id="users">
+                <!-- Users will be dynamically added here by JavaScript -->
+            </ul>
+        </section>
+
+        <!-- Form to Add a New User -->
+        <section id="user-form">
+            <h2>Add New User</h2>
+            <form id="addUserForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter user name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter user email">
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required placeholder="Enter user age">
+                
+                <button type="submit">Add User</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>

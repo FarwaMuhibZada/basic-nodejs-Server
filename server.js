@@ -1,23 +1,21 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const usersRoute = require('./routes/users');
+const path = require('path');
 
 const app = express();
 const PORT = 3000;
 
-// Middleware to handle JSON data
-app.use(bodyParser.json());
-
 // Serve static files from the 'public' directory
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Basic route for the homepage
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Use the users route for /users path
-app.use('/users', usersRoute);
+// Serve the users JSON file
+app.get('/users.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'users.json'));
+});
 
 // Start the server
 app.listen(PORT, () => {
