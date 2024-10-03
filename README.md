@@ -48,6 +48,9 @@ node server.js
 ```
 The server will be running at http://localhost:3000.
 
+## DEMO 📺
+[Deployment Link](https://nextjs-advanced-app.vercel.app/)
+
 ## 📋 Features
  - Homepage: Serves a static HTML file as the homepage.
  - CRUD Operations: Implements basic CRUD operations for managing users.
@@ -68,8 +71,10 @@ Creates a new user. Example request body:
 
 ```json
 {
-  "id": 3,
-  "name": "Charlie"
+    "id": 2,
+    "name": "Bob",
+    "email": "bob@example.com",
+    "age": 30
 }
 ```
 PUT /users/:id
@@ -77,8 +82,10 @@ Updates an existing user based on their ID. Example request body:
 
 ```json
 {
-  "id": 1,
-  "name": "Updated Name"
+    "id": 2,
+    "name": "Bob",
+    "email": "bob@example.com",
+    "age": 30
 }
 ```
 DELETE /users/:id
