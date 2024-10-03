@@ -24,14 +24,18 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
   const userId = parseInt(req.params.id, 10); // Added radix parameter
   const updatedUser = req.body;
-  users = users.map((user) => (user.id === userId ? updatedUser : user)); // No line break before arrow function
+  users = users.map(
+    (user) => (user.id === userId ? updatedUser : user)
+  ); // Line break added
   res.json(updatedUser);
 });
 
 // DELETE user
 router.delete('/:id', (req, res) => {
   const userId = parseInt(req.params.id, 10); // Added radix parameter
-  users = users.filter((user) => user.id !== userId); // No line break before arrow function
+  users = users.filter(
+    (user) => user.id !== userId
+  ); // Line break added
   res.json({ message: 'User deleted' });
 });
 
