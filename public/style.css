@@ -1,0 +1,112 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container styling for sections */
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title styling */
+h1 {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Subtitles for sections */
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Styling for the user list */
+#users {
+  list-style-type: none;
+  padding: 0;
+}
+
+#users li {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: #ecf0f1;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+form label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+form input {
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #bdc3c7;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 300px;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
