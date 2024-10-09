@@ -49,7 +49,7 @@ node server.js
 The server will be running at http://localhost:3000.
 
 ## DEMO 📺
-[Deployment Link](https://nextjs-advanced-app.vercel.app/)
+[Deployment Link](https://basic-nodejs-server-9nqsu5y09-farwamuhibzadas-projects.vercel.app/)
 
 ## 📋 Features
  - Homepage: Serves a static HTML file as the homepage.
